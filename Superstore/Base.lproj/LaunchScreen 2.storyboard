@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGSplash" translatesAutoresizingMaskIntoConstraints="NO" id="AWi-zY-TbB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoverImage" translatesAutoresizingMaskIntoConstraints="NO" id="3WQ-Sy-u2A">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="106" translatesAutoresizingMaskIntoConstraints="NO" id="Qxi-us-X09">
+                                <rect key="frame" x="60" y="241.5" width="294" height="413.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="136" translatesAutoresizingMaskIntoConstraints="NO" id="Clu-1q-EBA">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="250"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlf-oE-bCD">
+                                                <rect key="frame" x="98.5" y="0.0" width="97" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="OQ8-Lk-QI7">
+                                                <rect key="frame" x="0.0" y="160" width="294" height="90"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ge2-fH-YmA">
+                                        <rect key="frame" x="75.5" y="356" width="143.5" height="57.5"/>
+                                        <string key="text">SUPERSTORE
+UI KIT</string>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qxi-us-X09" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Ete-WE-x36"/>
+                            <constraint firstAttribute="bottom" secondItem="AWi-zY-TbB" secondAttribute="bottom" id="JVH-vj-JTl"/>
+                            <constraint firstAttribute="trailing" secondItem="AWi-zY-TbB" secondAttribute="trailing" id="L5p-Rh-RPJ"/>
+                            <constraint firstItem="Qxi-us-X09" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="N60-9M-JEd"/>
+                            <constraint firstAttribute="bottom" secondItem="3WQ-Sy-u2A" secondAttribute="bottom" id="PHQ-jY-eMY"/>
+                            <constraint firstItem="AWi-zY-TbB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TNn-vM-zwm"/>
+                            <constraint firstItem="3WQ-Sy-u2A" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ayi-7m-UXx"/>
+                            <constraint firstItem="3WQ-Sy-u2A" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="drH-Vw-9KK"/>
+                            <constraint firstItem="3WQ-Sy-u2A" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="la2-Xr-eJb"/>
+                            <constraint firstItem="AWi-zY-TbB" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="sQ9-Il-05Z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BGSplash" width="414" height="896"/>
+        <image name="hoverImage" width="414" height="896"/>
+        <image name="logo" width="294" height="90"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
